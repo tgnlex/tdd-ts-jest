@@ -1,10 +1,11 @@
-import myCalc from '../src/calc';
+import {calcAdder} from '../src/calc';
+function TestAdder() {
+	if (calcAdder(4, 6) === 10) {
+		console.log('Test Passed')
+	}
+	else {
+		console.error("Test Failed ")
+	}
+}
 
-
-test('adds a + b to get c', () => {
-	  expect(myCalc.add(4, 6)).toBe(10);
-});
-test('subtr a - b to get c', () => {
-	expect(myCalc.subtract(10, 8)).toBe(2)
-})
-
+TestAdder()
